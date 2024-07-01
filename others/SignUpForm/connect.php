@@ -28,5 +28,5 @@ else{
 }
 $conn->close();
 
-header("Location: \Yogesh\Project 2 Uttrakhand\index.html");
+header("Location: \Yogesh\Project 2 Uttrakhand\others\Home\home.html");
 ?>

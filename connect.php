@@ -22,10 +22,10 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     $row = $result->fetch_assoc();
-    header("Location: \Yogesh\Project 2 Uttrakhand\others\Signin\welcome.html");
+    header("Location: \Yogesh\Project 2 Uttrakhand\others\Home\home.html");
     }
 else {
-    header("Location: \Yogesh\Project 2 Uttrakhand\others\Signin\login.html?error=true");
+    header("Location: \Yogesh\Project 2 Uttrakhand\index.html?error=true");
 }
 
 ?>

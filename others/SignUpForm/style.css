@@ -7,7 +7,7 @@ body {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)),
-    url("/images/img4.jpg");
+  url("\uttarakhand-first.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
