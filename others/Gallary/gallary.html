@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <title>Image Grid Example</title>
+  <style>
+    body {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)),
+        url("uttarakhand-first.jpg");
+      /* Light gray background */
+      box-sizing: border-box;
+      font-family: "Josefin Sans", sans-serif;
+      width: 100%;
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      /* Make the background image fixed */
+      margin: 0;
+      /* Remove default margin */
+      padding: 0;
+      /* Remove default padding */
+    }
+
+    nav {
+      width: 100%;
+      height: 15vh;
+      background: rgba(0, 0, 0, 0.2);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-transform: uppercase;
+    }
+
+    nav .logo {
+      width: 25%;
+      text-align: center;
+    }
+
+    nav .menu {
+      width: 40%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav .menu a {
+      width: 25%;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    nav .menu a:nth-child(2) {
+      color: #00b894;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /* Three columns */
+      grid-gap: 10px;
+      /* Gap between grid items */
+      padding: 10px;
+      /* Padding for the container */
+    }
+
+    .image-item {
+      width: 600px;
+      /* Constrain width to 300 pixels */
+      height: 600px;
+      /* Constrain height to 300 pixels */
+      overflow: hidden;
+      /* Hide any overflow */
+      position: relative;
+      /* Make it relative to its container */
+    }
+
+    .image-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Maintain aspect ratio and cover container */
+      transition: transform 0.3s ease;
+      /* Smooth transition */
+    }
+
+    .image-item:hover img {
+      transform: scale(1.1);
+      /* Scale up by 10% on hover */
+    }
+
+    .image-caption {
+      position: absolute;
+      bottom: -40px;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      /* Semi-transparent background */
+      color: white;
+      padding: 5px;
+      text-align: center;
+      transition: bottom 0.3s ease;
+      /* Smooth transition */
+    }
+
+    .image-item:hover .image-caption {
+      bottom: -40px;
+      /* Adjust as needed */
+    }
+
+    .header {
+      background-color: rgba(0, 0, 0, 0.2);
+      color: azure;
+      text-align: center;
+      margin-top: 5px;
+      font-size: 50px;
+      margin-bottom: 25px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <h1 style="font-size: 20px;"> Mera Bharat <br>
+        <div style="font-size:24px;">Meri Devbhumi</div>
+      </h1>
+    </div>
+    <div class="menu">
+      <a href="\Yogesh\Project 2 Uttrakhand\index.html">Home</a>
+      <a href="\Yogesh\Project 2 Uttrakhand\others\Gallary\gallary.html">Gallery</a>
+      <a href="\Yogesh\Project 2 Uttrakhand\others\About\about.html">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <h1 class="header">Image Gallery</h1>
+
+  <div class="image-grid">
+    <div class="image-item">
+      <img src="/images/2.jpg" alt="Image 1">
+      <div class="image-caption">Description for Image 1</div>
+    </div>
+    <div class="image-item">
+      <img src="/images/3.jpg" alt="Image 2">
+      <div class="image-caption">Description for Image 2</div>
+    </div>
+    <div class="image-item">
+      <img src="/images/4.jpg" alt="Image 2">
+      <div class="image-caption">Description for Image 3</div>
+    </div>
+    <div class="image-item">
+      <img src="/images/5.jpg" alt="Image 2">
+      <div class="image-caption">Description for Image 4</div>
+    </div>
+    <div class="image-item">
+      <img src="/images/6.jpg" alt="Image 2">
+      <div class="image-caption">Description for Image 5</div>
+    </div>
+    <div class="image-item">
+      <img src="/images/7.jpg" alt="Image 2">
+      <div class="image-caption">Description for Image 6</div>
+    </div>
+    <div class="image-item">
+      <img src="/images/8.jpg" alt="Image 2">
+      <div class="image-caption">Description
